@@ -17,3 +17,33 @@ class Cliente():
     def listCar(self):
         for x in self.lista_carros:
             print("carro con placas: " + x.placa)
+
+class Cupo():
+    def __init__(self, letra):
+        self.letra = letra
+
+class Empleado():
+    def __init__(self, nombre, codigo):
+        self.nombre = nombre
+        self.codigo = codigo
+
+class Pago():
+    def __init__(
+            self,
+            hora_i,
+            fecha_i,
+            hora_f,
+            fecha_f,
+            valor,
+            carro,
+            cupo,
+            empleado
+            ):
+        self.hora_inicio = hora_i
+        self.fecha_inicio = fecha_i
+        self.hora_fin = hora_f
+        self.fecha_fin = fecha_f
+        self.valor = valor
+        self.carro = carro
+        self.cupo = cupo
+        self.empleado = empleado
